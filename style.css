@@ -6,8 +6,10 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
+    background-image: url('C:/Users/User/Downloads/aaaaaaaaaaaaaaaaaaaaaa.jpg');
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    color: #333; /* Cor base do texto */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,14 +20,15 @@ body {
     width: 100%;
     max-width: 600px;
     padding: 20px;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.95); /* uase branco para boa legibilidade */
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
     text-align: center;
     margin-bottom: 20px;
+    color: #5c4d8a; /* Cor roxa suave */
 }
 
 .form-container {
@@ -39,12 +42,12 @@ input[type="text"],
 input[type="datetime-local"] {
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #ddd;
+    border: 1px solid #b2a1d8; /* Bordas em roxo claro */
     border-radius: 4px;
 }
 
 button {
-    background-color: #4CAF50;
+    background-color: #7c6b9a;
     color: white;
     padding: 10px;
     border: none;
@@ -53,8 +56,22 @@ button {
     cursor: pointer;
 }
 
+.delete-button {
+    background-color: #6b5b8a;
+    padding: 5px 10px; /* Ajustar o padding para diminuir o tamanho */
+    font-size: 14px; /* Diminuir o tamanho da fonte */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #6b5b8a;
+}
+
+
 button:hover {
-    background-color: #45a049;
+    background-color: #6b5b8a; /* Cor de hover mais escura */
 }
 
 .commitments-list ul {
@@ -62,8 +79,10 @@ button:hover {
 }
 
 .commitments-list li {
-    background-color: #f1f1f1;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo claro para itens da lista */
     margin: 10px 0;
     padding: 10px;
     border-radius: 4px;
+    border: 1px solid #d1c4e9; /* Bordas em roxo claro */
+    color: #5c4d8a; /* Cor do texto da lista */
 }
